@@ -1,0 +1,225 @@
+#sm-svg{
+    background-size: cover;
+    position: absolute;
+    width: 25px;
+    height: 100px;
+    bottom: 36.5vh;
+    left: -1px;
+    background-image: url(../images/Footer-side.svg);
+}
+.footer-off{
+    transform: translate(-25px);
+}
+.sm-menu{
+    width: 27vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.8);
+}
+.sm-off{
+    transform: translate(-27vw);
+}
+.menu-content{
+    font-size: 92%;
+    padding: 0 2vw;
+    color: darkgray;
+}
+.no-decor, .no-decor:hover{
+    color: gray;
+    text-decoration: none;
+}
+.no-decor:active{
+    color: darkgray;
+}
+.navButton-clicked{
+    transform: translate(27vw);
+}
+#menu-top{
+    height: 100vh;
+    width: 1.5vw;
+    position: absolute;
+    left: 25.5vw;
+    top: 0;
+    background: linear-gradient(90deg, #333, #555, #333);
+}
+.move{
+    transition: all 2s;
+}
+.sm-menu-right, .sm-menu-left{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 4vw;
+}
+@media only screen and (max-height: 823px) and (max-width: 414px) {
+    #sm-svg{
+        background-position: center;
+        width: 100vw;
+        height: 6vh;
+        background-size: cover;
+        position: absolute;
+        bottom: -.1vh;
+        left: 0;
+        background-image: url(../images/Footer-portrait.svg);
+    }
+    .footer-off{
+        transform: translateY(6vh);
+    }
+    .sm-off{
+        transform: translateY(30vh);
+    }
+    .sm-menu{
+        width: 100vw;
+        height: 26vh;
+        padding: 4vh 3vw 0;
+    }
+    .navButton-clicked{
+        transform: translateY(-26vh);
+    }
+    .navButton-open{
+        background-image: url(../images/Footer-portrait-open.svg) !important;
+    }
+    #menu-top{
+        display: none;
+    }
+    .move{
+        transition: all 1.5s;
+    }
+    .sm-split-right{
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 3vw;
+    }
+    .sm-split-left{
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 4vw;
+    }
+}
+
+/* HELP BUTTON STYLING */
+/* #help{
+    width: 25px;
+    height: 25px;
+    background-image: url('../images/Help.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 6vw;
+    bottom: 9vh;
+}
+.hide-help{
+    opacity: 0;
+}
+#interstitial, #inter-help, #help{
+    transition: all 2s; 
+}
+#inter-help{
+    position: fixed; 
+    left:0; 
+    top:0; 
+    width:100vw; 
+    height:100vh; 
+    background-color: rgba(0,0,0,.6);
+}
+.demo-el{
+    transition: all 2s;
+    opacity: 0;
+}
+.demo-text{
+    transition: all 1s;
+    width: 20vw;
+    position: fixed;
+    color: white;
+    text-align: center;
+    opacity: 0;
+}
+.click-c{
+    left: 9vw;
+    top: 5vh;
+}
+.click-p{
+    right: 9vw; 
+    top: 5vh;
+}
+.click-cut{
+    right: 40vw; 
+    top: 34vh;
+}
+.click-tab{
+    width: 14vw;
+    left: 6vw;
+    top: 42vh;
+}
+.click-help{
+    right: 11vw;
+    bottom: 5vh;
+}
+.tab-contact-text{
+    top: 55vh;
+}
+.click-email{
+    left: 31vw;
+    top: 37.5vh;
+}
+.click-phone{
+    left: 23vw;
+    top: 42vh;
+}
+.click-panels{
+    left: 59vw;
+    top: 5vh;
+    width: 30vw;
+}
+.click-panels2{
+    left: 28vw;
+    top: 48vh;
+}
+.click-fullscreen{
+    left: 78vw;
+    top: 7vh;
+}
+.email-contact, .phone-contact, .email-about{
+    transition: all 1s;
+    position: fixed;
+    color: rgba(255,255,255,.9);
+    opacity: 0;
+}
+.email-contact{
+    left: 9vw;
+    top: 37.3vh;
+}
+.phone-contact{
+    left: 9vw;
+    top: 42vh;
+}
+.email-about{
+    left: 7.3vw;
+    top: 85.5vh;
+}
+.email-text-about{
+    left: 29vw;
+    top: 87.5vh;
+}
+.demo-design, .demo-web{
+    transition: all 1.5s;
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    top: 0;   
+    opacity: 0;
+    text-align: center;
+}
+.demo-design{
+    background-color: #333;
+    left: 50vw;
+    color: white;
+}
+.demo-web{
+    background-color: white;
+    left: 0;
+}
+.demo-sm{
+    background-image: url(../images/Footer-side-demo.svg) !important;
+} */

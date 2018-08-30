@@ -1,0 +1,125 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+*::-webkit-scrollbar{
+    width: 0;
+}
+body{
+    background-color: #333;
+}
+#container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* CONTACT / ABOUT ME PAGES CSS */
+.ContactMe, .About{
+    color: white;
+    text-align: center;
+}
+.About{
+    margin: 6vh 18vw;
+    display: inline-block;
+}
+.about{
+    padding: 2vw;
+    color: white;
+    overflow: auto;
+}
+.no-decor, .no-decor:hover{
+    color: gray;
+    text-decoration: none;
+}
+.no-decor:active{
+    color: darkgray;
+}
+.bus-card{
+    background-image: url(../images/Contact.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #333;
+    height: 0;
+}
+.c-name, .c-pos{
+    font-weight: 300;
+    color: #bcdff4;
+}
+.c-name, .c-email, .c-phone, .c-pos, .c-city{
+    position: absolute;
+}
+.c-name{
+    top: 0vh;
+}
+.c-pos{
+    top: 8vh;
+    font-size: 143%;
+}
+.c-email{
+    top: 16vh;
+}
+.c-phone{
+    top: 21vh;
+}
+.c-city{
+    top: 26vh;
+}
+.headshot{
+    width: 27rem;
+    height: 27rem;
+    position: relative;
+    left: 0rem;
+    top: 0rem;
+    float: right;
+    margin: 2rem -6rem 3rem 6rem;
+    border-radius: 50%;
+    shape-outside: circle();
+}
+.text{
+    clear: left;
+    padding-right: 28vw;
+    margin-left: 2vw;
+    text-align: justify;
+    font-size: 80%;
+    display: inline;
+    color: white;
+    overflow-y: auto;
+    font-weight: 100;
+}
+#full-stack{
+    font-size: 1.25rem;
+    margin: 4vh 0;
+}
+.contact-info{
+    width: 40vw;
+    position: absolute;
+    left: 10vw;
+    top: 14vh;
+}
+@media only screen and (max-width: 823px) and (max-height: 414px) {
+    #full-stack{
+        margin: 6.2vh 0;
+    }
+}
+@media only screen and (max-height: 823px) and (max-width: 414px) {
+    .contact-info{
+        width: 61vw;
+    }
+    #full-stack{
+        margin: 0;
+    }
+    .c-email{
+        top: 10vh;
+    }
+    .c-phone{
+        top: 14vh;
+    }
+    .c-city{
+        top: 18vh;
+    }
+}

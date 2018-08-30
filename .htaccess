@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^contact$ template/contact.html
+RewriteRule ^about$ template/about.html
+RewriteRule ^portfolio$ template/portfolio.html
+
